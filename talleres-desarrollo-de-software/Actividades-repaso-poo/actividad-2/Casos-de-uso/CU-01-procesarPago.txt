@@ -1,0 +1,45 @@
+ID: CU-01
+Nombre: Procesar pago
+Actor Primario: Cliente Autenticado
+Actor Secundario: Sistema de notificaciones, Sistema de facturacion de pagos
+
+Precondiciones:
+-El cliente esta autenticado en el sistema 
+-La cuenta seleccionada (Ahorros o Corriente), tiene saldo disponible 
+-El cliente tiene un pago de factura pendiente por realizar 
+
+Postcondiciones (éxito):
+-El saldo de la cuenta origen disminuye segun el monto pagado
+-El saldo de la cuenta destino aumenta en el monto
+-Se registra la operación en el historial de ambas cuentas, pago, registro y factura 
+-Se envía notificación de pago exitoso al cliente
+
+Flujo principal:
+1.El cleinte selecciona un "pago de factura" pendiente para procesar 
+2.El sistema muestra las facturas pendientes para procesar
+3.El cliente selecciona la factura que va a pagar
+4.El cliente selecciona la cuenta (Ahorros o Corriente) desde la cual pagara 
+5.El sistema valida si la cuenta tiene el monto necesario disponible 
+6.El cleinte realiza el pago 
+7.El sistema muestra la factura
+8.El cliente confima la factura 
+9.El sistema modifica el estado de la factura a "pagado"
+
+Flujo alternativo:
+4a.El cliente tiene más de una cuenta activa:
+   4a.1 El sistema le permite elegir entre Cuenta de Ahorros o Cuenta Corriente
+8a.El cliente cancela la confirmacion 
+   8a.1.El sistema descarta la operacion 
+   8a.2.El caso de uso termina sin cambios
+
+Excepciones:
+5b.La cuenta no tiene saldo suficiente
+   5b.1.El sistema le informa al cleinte que no tiene saldo suficiente para pagar desde esa cuenta 
+   5b.2.El cliente puede volver a seleccionar otra cuenta para verificar si en esa si hay saldo
+8b.Fallo en el registro del pago:
+      8b.1 El sistema revierte cualquier cambio parcial en el saldo 
+      8b.2 El sistema informa "No fue posible procesar el pago. Intente más tarde"
+      8b.3 El sistema registra el error internamente
+      
+
+
