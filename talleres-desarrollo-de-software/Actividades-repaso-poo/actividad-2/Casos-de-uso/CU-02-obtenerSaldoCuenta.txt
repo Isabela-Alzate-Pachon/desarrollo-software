@@ -1,0 +1,44 @@
+ID: CU-02
+Nombre: Obtener el saldo de la cuenta 
+Actor primario: Cliente autenticado con permisos de consulta 
+Actor secundario: Ninguno
+
+Precondiciones:
+-El cliente autenticado tiene permiso para acceder a esta informacion 
+-La cuenta existe dentro del sistema bancario
+-la cuenta a consultar pertenece al cliente autenticado con permiso 
+
+Postcondiciones (éxito):
+-El sistema muestra el saldo del cliente ingresado 
+-La consulta queda registrada en el historial del sistema
+
+Flujo principal:
+1.El cliente selecciona la cuenta en la cual desea consultar el saldo (Ahorros o Corriente)
+2.El sistema muestra la opción de consultar el saldo en esa cuenta
+3.El cliente selecciona la opción
+4.El sistema muestra el saldo que tiene registrado del cliente
+5.El sistema guarda en el historial que el cliente consultó su saldo
+
+Flujos alternativos:
+1a.El cliente tiene más de una cuenta en la cual puede consultar su saldo
+   1a.1.El sistema le muestra al cliente las cuentas en las cuales puede consultar su saldo para que escoja
+   1a.2.El cliente selecciona la cuenta de la cual desea ver el saldo
+3a.El cliente cancela la consulta antes de confirmarla
+   3a.1.El sistema descarta la solicitud
+   3a.2.El caso de uso termina sin mostrar el saldo
+
+Excepciones:
+1b.La cuenta seleccionada no existe o no pertenece al cliente autenticado 
+   1b.1.El sistema informa "Cuenta no encontrada o no autorizada" 
+   1b.2.El caso de uso termina
+4a.Fallo en la consulta del saldo (error interno del sistema)
+   4a.1. El sistema informa "No fue posible consultar el saldo. Intente más tarde"
+   4a.2. El sistema registra el error internamente
+
+
+
+ 
+
+
+
+
