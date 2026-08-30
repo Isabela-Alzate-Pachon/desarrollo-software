@@ -1,0 +1,35 @@
+ID: CU-03
+Nombre: Obtener pagos por cliente
+Actor primario: Cliente autenticado con permisos de consulta
+Actores secundarios: Ninguno
+
+Precondiciones:
+-El cliente autenticado tiene permiso para acceder a esta información
+-El cliente existe dentro del sistema
+
+Postcondiciones (éxito):
+-El sistema muestra el listado de pagos realizados por el cliente
+-La consulta queda registrada en el historial del sistema
+
+Flujo principal:
+1.El cliente selecciona la opción "Consultar mis pagos"
+2.El sistema recupera los pagos asociados al cliente autenticado
+3.El sistema muestra el listado de pagos (fecha, monto, cuenta origen, factura asociada)
+4.El cliente revisa el listado de pagos
+5.El sistema guarda en el historial que el cliente consultó sus pagos
+
+Flujos alternativos:
+3a.El cliente desea filtrar los pagos por rango de fechas
+   3a.1.El cliente ingresa la fecha inicial y final
+   3a.2.El sistema muestra únicamente los pagos realizados en ese rango
+4a.El cliente selecciona un pago específico del listado
+   4a.1.El sistema muestra el detalle completo de ese pago (factura, cuenta, comprobante)
+
+Excepciones:
+2a.El cliente no tiene pagos registrados
+   2a.1.El sistema informa "No se encontraron pagos registrados para este cliente"
+   2a.2.El caso de uso termina
+2b.Fallo en la consulta de pagos (error interno del sistema)
+   2b.1.El sistema informa "No fue posible consultar los pagos. Intente más tarde"
+   2b.2.El sistema registra el error internamente
+   
