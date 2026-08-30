@@ -1,0 +1,34 @@
+ID: CU-04
+Nombre: Obtener facturas por cliente
+Actor primario: Cliente autenticado con permisos de consulta
+Actores secundarios: Ninguno
+
+Precondiciones:
+-El cliente autenticado tiene permiso para acceder a esta información
+-El cliente existe dentro del sistema
+
+Postcondiciones (éxito):
+-El sistema muestra el listado de facturas asociadas al cliente
+-La consulta queda registrada en el historial del sistema
+
+Flujo principal:
+1.El cliente selecciona la opción "Consultar mis facturas"
+2.El sistema recupera las facturas asociadas al cliente autenticado
+3.El sistema muestra el listado de facturas (número, servicio, monto, estado, fecha de vencimiento)
+4.El cliente revisa el listado de facturas
+5.El sistema guarda en el historial que el cliente consultó sus facturas
+
+Flujos alternativos:
+3a.El cliente desea filtrar las facturas por estado (pendiente o pagada)
+   3a.1.El cliente selecciona el filtro deseado
+   3a.2.El sistema muestra únicamente las facturas que cumplen ese estado
+4a.El cliente selecciona una factura específica del listado
+   4a.1.El sistema muestra el detalle completo de esa factura (servicio, periodo, valor, fecha límite)
+
+Excepciones:
+2a.El cliente no tiene facturas registradas
+   2a.1.El sistema informa "No se encontraron facturas registradas para este cliente"
+   2a.2.El caso de uso termina
+2b.Fallo en la consulta de facturas (error interno del sistema)
+   2b.1.El sistema informa "No fue posible consultar las facturas. Intente más tarde"
+   2b.2.El sistema registra el error internamente
