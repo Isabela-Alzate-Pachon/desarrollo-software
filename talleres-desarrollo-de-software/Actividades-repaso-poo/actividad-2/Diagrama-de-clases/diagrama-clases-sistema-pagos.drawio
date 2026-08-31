@@ -1,0 +1,206 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="7S36n8XfhQohCNpvdPrz">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="5yC9lP3lfgSECViQYnir-23" edge="1" parent="1" source="5yC9lP3lfgSECViQYnir-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=-0.009;entryY=0.269;entryDx=0;entryDy=0;endArrow=open;endFill=0;entryPerimeter=0;" target="5yC9lP3lfgSECViQYnir-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5yC9lP3lfgSECViQYnir-24" connectable="0" parent="5yC9lP3lfgSECViQYnir-23" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1" vertex="1">
+          <mxGeometry relative="1" x="0.6921" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5yC9lP3lfgSECViQYnir-25" connectable="0" parent="5yC9lP3lfgSECViQYnir-23" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="-0.5794" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5yC9lP3lfgSECViQYnir-52" edge="1" parent="1" source="5yC9lP3lfgSECViQYnir-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="5yC9lP3lfgSECViQYnir-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iDB-ypWmlkX8-LknMx2P-1" connectable="0" parent="5yC9lP3lfgSECViQYnir-52" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1" vertex="1">
+          <mxGeometry relative="1" x="0.8949" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iDB-ypWmlkX8-LknMx2P-5" connectable="0" parent="5yC9lP3lfgSECViQYnir-52" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="-0.864" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5yC9lP3lfgSECViQYnir-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;overflow=fill;align=center;" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th&gt;&lt;b&gt;&lt;i&gt;Cuenta&lt;br&gt;(abstracta)&lt;/i&gt;&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;-numeroCuenta: String&lt;br&gt;-cliente:Cliente&lt;br&gt;-saldo: BigDecimal&lt;br&gt;-estado: String&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;+Cuenta(numCuenta: String, cliente: String, saldo: String)&lt;br&gt;+getNumeroCuenta(): String&lt;br&gt;+getCliente(): Cliente&amp;nbsp;&lt;br&gt;+getSaldo(): BigDecimal&lt;br&gt;+getEstado(): String&lt;br&gt;#setSaldo(nuevoSaldo: decimal):void&lt;br&gt;+depositar (monto: decimal): void&amp;nbsp;&lt;br&gt;&lt;i&gt;+retirar(monto: decimal): void&lt;br&gt;+obtenerSaldoDisponible():&amp;nbsp;&lt;/i&gt;BigDecimal&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="280" width="270" x="320" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="5yC9lP3lfgSECViQYnir-48" edge="1" parent="1" source="5yC9lP3lfgSECViQYnir-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=0;dashed=1;dashPattern=8 8;" target="5yC9lP3lfgSECViQYnir-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5yC9lP3lfgSECViQYnir-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;overflow=fill;align=center;" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th&gt;CuentaAhorros&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;-tasaInteres: BigDecimal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;+CuentaAhorros (numCuenta, cliente, saldo, tasaInteres)&lt;br&gt;+getTasaInteeres(): BigDecimal&lt;br&gt;+retirar (monto): void&lt;br&gt;+obtenerSaldoDisponible(): BigDecimal&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="200" width="320" x="120" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="5yC9lP3lfgSECViQYnir-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;overflow=fill;align=center;" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th&gt;CuentaCorriente&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;-cupoSobregiro: BigDecimal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;+CuentaCorriente(numCuenta, cliente, saldo, cupoSobregiro)&lt;br&gt;+getCupoSobregiro(): BigDecimal&lt;br&gt;+retirar (monto): void&lt;br&gt;+obtenerSaldoDisponible(): BigDecimal&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="200" width="350" x="510" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="5yC9lP3lfgSECViQYnir-7" edge="1" parent="1" source="5yC9lP3lfgSECViQYnir-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.649;entryY=1.014;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=block;endFill=0;" target="5yC9lP3lfgSECViQYnir-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="685" y="480" />
+              <mxPoint x="495.17" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5yC9lP3lfgSECViQYnir-53" edge="1" parent="1" source="5yC9lP3lfgSECViQYnir-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="5yC9lP3lfgSECViQYnir-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iDB-ypWmlkX8-LknMx2P-2" connectable="0" parent="5yC9lP3lfgSECViQYnir-53" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1" vertex="1">
+          <mxGeometry relative="1" x="0.5275" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iDB-ypWmlkX8-LknMx2P-6" connectable="0" parent="5yC9lP3lfgSECViQYnir-53" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="-0.5848" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5yC9lP3lfgSECViQYnir-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;overflow=fill;align=center;" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th&gt;&lt;b&gt;&lt;i&gt;Cliente&lt;/i&gt;&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;-idCliente: String&lt;br&gt;-nombre: String&lt;br&gt;-email: String&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;+Cliente(idCliente, nombre, email)&amp;nbsp;&lt;br&gt;+getIdCliente(): String&lt;br&gt;+getNombre(): String&lt;br&gt;+getEmail(): String&lt;br&gt;+setNombre(nuevoNombre): void&lt;br&gt;+setEmail(nuevoEmail): void&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="260" width="270" x="730" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="5yC9lP3lfgSECViQYnir-26" edge="1" parent="1" source="5yC9lP3lfgSECViQYnir-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=0.986;entryY=0.282;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=open;endFill=0;" target="5yC9lP3lfgSECViQYnir-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1120" y="233.33" />
+            </Array>
+            <mxPoint x="1010" y="233" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5yC9lP3lfgSECViQYnir-27" connectable="0" parent="5yC9lP3lfgSECViQYnir-26" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="-0.6325" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5yC9lP3lfgSECViQYnir-28" connectable="0" parent="5yC9lP3lfgSECViQYnir-26" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1" vertex="1">
+          <mxGeometry relative="1" x="0.472" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5yC9lP3lfgSECViQYnir-54" edge="1" parent="1" source="5yC9lP3lfgSECViQYnir-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="5yC9lP3lfgSECViQYnir-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iDB-ypWmlkX8-LknMx2P-3" connectable="0" parent="5yC9lP3lfgSECViQYnir-54" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1" vertex="1">
+          <mxGeometry relative="1" x="0.9097" y="3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iDB-ypWmlkX8-LknMx2P-7" connectable="0" parent="5yC9lP3lfgSECViQYnir-54" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="-0.8842" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5yC9lP3lfgSECViQYnir-9" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;overflow=fill;align=center;" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th&gt;&lt;b&gt;&lt;i&gt;Factura&lt;/i&gt;&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;-numeroFactura: String&lt;br&gt;-cliente: Cliente&lt;br&gt;-servicio: String&amp;nbsp;&lt;br&gt;-valor: BigDecimal&lt;br&gt;-estado: String&lt;br&gt;-fechaVencimiento: LocalDate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;+Factura(numeroFactura, cliente, servicio, valor, fechaVencimiento)&lt;br&gt;+getNumeroFactura(): String&lt;br&gt;+getCliente(): Cliente&lt;br&gt;+getServicio(): String&lt;br&gt;+getValor():BigDecimal&lt;br&gt;+getEstado(): String&lt;br&gt;+getFechaVencimiento(): LocalDate&lt;br&gt;+marcarComoPagada(): void&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="280" width="370" x="1120" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="5yC9lP3lfgSECViQYnir-36" edge="1" parent="1" source="5yC9lP3lfgSECViQYnir-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=open;endFill=0;" target="5yC9lP3lfgSECViQYnir-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5yC9lP3lfgSECViQYnir-38" connectable="0" parent="5yC9lP3lfgSECViQYnir-36" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.5741" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5yC9lP3lfgSECViQYnir-39" connectable="0" parent="5yC9lP3lfgSECViQYnir-36" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1" vertex="1">
+          <mxGeometry relative="1" x="0.3926" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5yC9lP3lfgSECViQYnir-46" connectable="0" parent="5yC9lP3lfgSECViQYnir-36" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="0..1" vertex="1">
+          <mxGeometry relative="1" x="-0.6142" y="-4" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5yC9lP3lfgSECViQYnir-29" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;overflow=fill;align=center;" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th&gt;&lt;b&gt;&lt;i&gt;Pago&lt;/i&gt;&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;-idPago: String&lt;br&gt;-cliente: Cliente&lt;br&gt;-factura: Factura&lt;br&gt;-cuenta: Cuenta&lt;br&gt;-monto: BigDecimal&lt;br&gt;-fecha: LocalDate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;+Pago(idPago, cliente, cuenta, factura, monto, fecha)&lt;br&gt;+getIdPago(): BigDecimal&lt;br&gt;+getCliente(): Cliente&lt;br&gt;+getCuenta(): Cuenta&lt;br&gt;+getFactura(): Factura&lt;br&gt;+getMonto():BigDecimal&lt;br&gt;+getFecha(): LocalDate&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="260" width="340" x="1135" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="5yC9lP3lfgSECViQYnir-33" edge="1" parent="1" source="5yC9lP3lfgSECViQYnir-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=0.852;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=open;endFill=0;" target="5yC9lP3lfgSECViQYnir-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="880" y="575" />
+              <mxPoint x="880" y="450" />
+              <mxPoint x="550" y="450" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5yC9lP3lfgSECViQYnir-42" connectable="0" parent="5yC9lP3lfgSECViQYnir-33" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1" vertex="1">
+          <mxGeometry relative="1" x="0.948" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5yC9lP3lfgSECViQYnir-43" connectable="0" parent="5yC9lP3lfgSECViQYnir-33" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="-0.9057" y="4" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5yC9lP3lfgSECViQYnir-37" edge="1" parent="1" source="5yC9lP3lfgSECViQYnir-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.003;entryY=0.187;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=open;startFill=0;endArrow=none;endFill=0;" target="5yC9lP3lfgSECViQYnir-29">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="865" y="440" />
+              <mxPoint x="900" y="440" />
+              <mxPoint x="900" y="558.6" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5yC9lP3lfgSECViQYnir-40" connectable="0" parent="5yC9lP3lfgSECViQYnir-37" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.7993" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5yC9lP3lfgSECViQYnir-41" connectable="0" parent="5yC9lP3lfgSECViQYnir-37" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="0.8149" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5yC9lP3lfgSECViQYnir-45" edge="1" parent="1" source="5yC9lP3lfgSECViQYnir-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.458;entryY=1.016;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=block;endFill=0;" target="5yC9lP3lfgSECViQYnir-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="280.03" y="480" />
+              <mxPoint x="443.69" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5yC9lP3lfgSECViQYnir-47" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;overflow=fill;align=center;" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th&gt;&lt;i style=&quot;&quot;&gt;Pagable&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;interface&lt;/span&gt;&lt;/i&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;+procesarPago(monto: BigDecimal): void&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="120" width="260" x="360" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="5yC9lP3lfgSECViQYnir-49" edge="1" parent="1" source="5yC9lP3lfgSECViQYnir-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.572;entryY=-0.019;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=block;endFill=0;dashed=1;dashPattern=8 8;" target="5yC9lP3lfgSECViQYnir-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5yC9lP3lfgSECViQYnir-50" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;overflow=fill;align=center;" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th&gt;SaldoInsuficienteException&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;+ SaldoInsuficienteException(mensaje: String)&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="120" width="260" x="734" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="5yC9lP3lfgSECViQYnir-51" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;overflow=fill;align=center;" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th&gt;&lt;i&gt;SistemaPagosService&lt;/i&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;-clientes: List&amp;lt;Cliente&amp;gt;&lt;br&gt;-cuentas: List&amp;lt;Cuenta&amp;gt;&lt;br&gt;-facturas: List&amp;lt;Factura&amp;gt;&lt;br&gt;-pagos: List&amp;lt;Pago&amp;gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;+crearCliente(cliente): void&lt;br&gt;+buscarCliente(idCliente): Cliente&lt;br&gt;+actualizarCliente(idCliente, nuevoNombre, nuevoEmail): void&lt;br&gt;+eliminarCliente(idCliente): void&lt;br&gt;+listarClientes(): List&amp;lt;Cliente&amp;gt;&lt;br&gt;+crearCuenta(cuenta): void&lt;br&gt;+buscarCuenta(numeroCuenta): Cuenta&lt;br&gt;+actualizarCuenta(numeroCuenta: String, nuevoEstado: String): void&lt;br&gt;+eliminarCuenta(numeroCuenta): void&lt;br&gt;+listarCuentas(): List&amp;lt;Cuenta&amp;gt;&lt;br&gt;+crearFactura(factura): void&lt;br&gt;+buscarFactura(numeroFactura): Factura&lt;br&gt;+actualizarFactura(numeroFactura: String, nuevoValor: BigDecimal, nuevaFechaVencimiento: LocalDate): void&lt;br&gt;+eliminarFactura(numeroFactura): void&lt;br&gt;+listarFacturas(): List&amp;lt;Factura&amp;gt;&lt;br&gt;+crearPago(pago): void&lt;br&gt;+buscarPago(idPago): Pago&lt;br&gt;+eliminarPago(idPago): void&lt;br&gt;+listarPagos(): List&amp;lt;Pago&amp;gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="460" width="460" x="635" y="-410" as="geometry" />
+        </mxCell>
+        <mxCell id="5yC9lP3lfgSECViQYnir-55" edge="1" parent="1" source="5yC9lP3lfgSECViQYnir-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.886;entryY=0.999;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;" target="5yC9lP3lfgSECViQYnir-51">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1540" y="575" />
+              <mxPoint x="1540" y="70" />
+              <mxPoint x="1042.57" y="70" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iDB-ypWmlkX8-LknMx2P-4" connectable="0" parent="5yC9lP3lfgSECViQYnir-55" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1" vertex="1">
+          <mxGeometry relative="1" x="0.9752" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iDB-ypWmlkX8-LknMx2P-8" connectable="0" parent="5yC9lP3lfgSECViQYnir-55" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="-0.9492" y="2" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
