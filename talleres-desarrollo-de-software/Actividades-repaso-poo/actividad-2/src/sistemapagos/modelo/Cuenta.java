@@ -33,6 +33,14 @@ public abstract class Cuenta {
         return estado;
     }
 
+    public void activar() {
+        this.estado = "ACTIVA";
+    }
+
+    public void inactivar() {
+        this.estado = "INACTIVA";
+    }
+
     protected void setSaldo(BigDecimal nuevoSaldo) {
         this.saldo = nuevoSaldo;
     }
