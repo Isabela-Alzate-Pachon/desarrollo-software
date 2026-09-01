@@ -14,7 +14,7 @@ import sistemapagos.modelo.Factura;
 import sistemapagos.modelo.Pago;
 import sistemapagos.servicio.SistemaPagosService;
 
-public class main {
+public class Main {
 
     private static Scanner scanner = new Scanner(System.in);
     private static SistemaPagosService servicio = new SistemaPagosService();
