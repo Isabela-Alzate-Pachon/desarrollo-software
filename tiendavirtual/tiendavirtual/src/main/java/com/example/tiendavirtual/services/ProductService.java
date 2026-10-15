@@ -24,7 +24,7 @@ public class ProductService {
 
 
     public List<Product> getAllProducts(){
-            List<ProductEntity> productEntity = productRepository.getAllProducts();
+            List<ProductEntity> productEntity = productRepository.getAllProductEntity();
             List<Product> products = productEntity.stream().map(ProductMapper::entityToModel).toList();
             return products;
     }

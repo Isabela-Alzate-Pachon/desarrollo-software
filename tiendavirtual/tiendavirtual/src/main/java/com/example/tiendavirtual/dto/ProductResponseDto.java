@@ -13,6 +13,9 @@ public class ProductResponseDto {
     private UUID id;
     private Double price;
     private String description;
+    private Double tax;
+    private Integer stock;
+    private String code;
 }
 
     

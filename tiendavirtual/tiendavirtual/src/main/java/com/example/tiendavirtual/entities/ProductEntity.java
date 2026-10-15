@@ -27,6 +27,12 @@ public class ProductEntity {
     private Double price;
     @Column 
     private String description;
+    @Column 
+    private Double tax;
+    @Column
+    private Integer stock;
+    @Column 
+    private String code;
 
 
 

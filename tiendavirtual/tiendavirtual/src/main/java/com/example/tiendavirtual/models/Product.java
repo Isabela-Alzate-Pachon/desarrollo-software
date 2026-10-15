@@ -11,6 +11,9 @@ public class Product {
     private String name; 
     private double price; 
     private String description;
+    private Double tax;
+    private Integer stock;
+    private String code;
 
     
 }

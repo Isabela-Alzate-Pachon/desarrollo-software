@@ -17,14 +17,21 @@ public static Product entityToModel(ProductEntity productEntity){
         product.setName(productEntity.getName());
         product.setPrice(productEntity.getPrice());
         product.setDescription(productEntity.getDescription());
+        product.setCode(productEntity.getCode());
+        product.setTax(productEntity.getTax());
+        product.setStock(productEntity.getStock());
         return product;
     }
  
     public static ProductResponseDto modelToDto(Product product){
         ProductResponseDto productResponseDto = new ProductResponseDto();
+        productResponseDto.setId(product.getId());
         productResponseDto.setName(product.getName());
         productResponseDto.setPrice(product.getPrice());
         productResponseDto.setDescription(product.getDescription());
+        productResponseDto.setCode(product.getCode());
+        productResponseDto.setTax(product.getTax());
+        productResponseDto.setStock(product.getStock());
         return productResponseDto;
     }
 
@@ -34,6 +41,9 @@ public static Product entityToModel(ProductEntity productEntity){
         productEntity.setName(product.getName());
         productEntity.setPrice(product.getPrice());
         productEntity.setDescription(product.getDescription());
+        productEntity.setCode(product.getCode());
+        productEntity.setTax(product.getTax());
+        productEntity.setStock(product.getStock());
         return productEntity;
     }
  
@@ -45,6 +55,9 @@ public static Product entityToModel(ProductEntity productEntity){
         product.setName(productCreateDto.getName());
         product.setPrice(productCreateDto.getPrice());
         product.setDescription(productCreateDto.getDescription());
+        product.setCode(productCreateDto.getCode());
+        product.setTax(productCreateDto.getTax());
+        product.setStock(productCreateDto.getStock());
         return product;
 
     }
