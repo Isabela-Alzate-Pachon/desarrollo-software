@@ -41,6 +41,26 @@ public class ProductService {
         Product createdProduct = ProductMapper.entityToModel(createdProductEntity);
         return createdProduct;
     }
+    public Product update (UUID id, Product product){
+        ProductEntity productEntityExist  = productRepository.getById(id);
+        Product productExist = ProductMapper.entityToModel(productEntityExist);
+        productExist.setId(id);
+        productExist.setName(product.getName());
+        productExist.setPrice(product.getPrice());
+        productExist.setTax(product.getTax());
+        productExist.setDescription(product.getDescription());
+        productExist.setStock(product.getStock());
+        productExist.setCode(product.getCode());
+        ProductEntity productEntity = ProductMapper.modelToEntity(productExist);
+        ProductEntity productEntityUpdate = productRepository.update(productEntity);
+        Product productUpdate = ProductMapper.entityToModel(productEntityUpdate);
+        return (productUpdate);
+    }
 
+
+    public void delete(UUID id){
+        ProductEntity productEntity = productRepository.getById(id);
+        productRepository.delete(productEntity);
+    }
 
 }

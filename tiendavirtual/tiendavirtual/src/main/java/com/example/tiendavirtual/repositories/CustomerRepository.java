@@ -1,6 +1,7 @@
 package com.example.tiendavirtual.repositories;
 
 import java.util.List;
+import java.util.UUID;
 
 import com.example.tiendavirtual.entities.CustomerEntity;
 
@@ -33,6 +34,19 @@ public class CustomerRepository {
         CustomerEntity createCustomer = repository.save(customerEntity);
         return createCustomer;
         
+    }
+    public CustomerEntity getById(UUID id) {
+        CustomerEntity customerEntity = repository.findById (id).get();
+        return customerEntity;
+    }
+
+    public CustomerEntity update(CustomerEntity customerEntity){
+        CustomerEntity customerUpdate = repository.save(customerEntity);
+        return customerUpdate;
+    }
+
+    public void delete(CustomerEntity customerEntity){
+        repository.delete(customerEntity);
     }
 
 

@@ -24,11 +24,26 @@ public class ProductRepository {
         return getById(UUID.fromString(id));
     }
 
-    public ProductEntity getById(UUID id) {
-        return repository.findById(id).orElse(null);
-    }
 
     public ProductEntity create(ProductEntity productEntity) {
         return repository.save(productEntity);
     }
+
+    public ProductEntity update(ProductEntity productEntity) {
+        return repository.save(productEntity);
+
+    }
+
+    public ProductEntity getById(UUID id) {
+        ProductEntity productEntity = repository.findById (id).get();
+        return productEntity;
+
+    }
+    public void delete(ProductEntity productEntity){
+        repository.delete(productEntity);
+    }
+
 }
+
+
+

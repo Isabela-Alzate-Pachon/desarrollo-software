@@ -1,7 +1,9 @@
 package com.example.tiendavirtual.controllers;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,6 +15,7 @@ import com.example.tiendavirtual.models.Customer;
 import com.example.tiendavirtual.services.CustomerService;
 
 import java.util.List;
+import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -51,11 +54,26 @@ public class CustomerController {
 
     @PostMapping
     public ResponseEntity<CustomerResponseDto> create(@RequestBody CustomerCreateDto customerCreateDto){
-        Customer customer = CustomerMapper.dToModel(customerCreateDto);
+        Customer customer = CustomerMapper.customerCreateDtoToModel(customerCreateDto);
         Customer customerCreate = customerService.create(customer);
         CustomerResponseDto customerResponseDto = CustomerMapper.modelToDto(customerCreate);
         return ResponseEntity.ok(customerResponseDto); 
     }
 
+    @PutMapping ("/{id}")
+    public ResponseEntity<CustomerResponseDto> update (@PathVariable("id") UUID id, @RequestBody CustomerUpdateDto customerUpdateDto){
+        Customer customer = CustomerMapper.customerUpdateDtoToModel(customerUpdateDto);
+        Customer customerUpdate = customerService.update(id, customer);
+        CustomerResponseDto customerResponseDto = CustomerMapper.modelToDto(customerUpdate);
+        return ResponseEntity.ok(customerResponseDto);
+    }
+
+    @DeleteMapping ("/{id}")
+    public ResponseEntity<Void> delete(@PathVariable("id") UUID id){
+        customerService.delete(id);
+        return ResponseEntity.ok().build();
+    }
 
 }
+
+

@@ -1,4 +1,5 @@
 package com.example.tiendavirtual.mappers;
+import com.example.tiendavirtual.controllers.CustomerUpdateDto;
 import com.example.tiendavirtual.dto.CustomerCreateDto;
 import com.example.tiendavirtual.dto.CustomerResponseDto;
 import com.example.tiendavirtual.entities.CustomerEntity;
@@ -34,7 +35,7 @@ public static Customer entityToModel(CustomerEntity customerEntity){
         customerEntity.setAddress(customer.getAddress());
         return customerEntity;
     }
-    public static Customer dToModel(CustomerCreateDto customerCreateDto) {
+    public static Customer customerCreateDtoToModel(CustomerCreateDto customerCreateDto) {
         Customer customer = new Customer();
         customer.setName(customerCreateDto.getName());
         customer.setIdentification(customerCreateDto.getIdentification());
@@ -43,7 +44,14 @@ public static Customer entityToModel(CustomerEntity customerEntity){
         return customer;
 
     }
- 
+    public static Customer customerUpdateDtoToModel(CustomerUpdateDto customerUpdateDto) {
+        Customer customer = new Customer();
+        customer.setName(customerUpdateDto.getName());
+        customer.setIdentification(customerUpdateDto.getIdentification());
+        customer.setEmail(customerUpdateDto.getEmail());
+        customer.setAddress(customerUpdateDto.getAddress());
+        return customer;
+    }
 
 }
 

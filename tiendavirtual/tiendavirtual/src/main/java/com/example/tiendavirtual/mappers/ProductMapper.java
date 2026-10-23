@@ -1,8 +1,7 @@
 package com.example.tiendavirtual.mappers;
 
     
-
-
+import com.example.tiendavirtual.controllers.ProductUpdateDto;
 import com.example.tiendavirtual.dto.ProductCreateDto;
 import com.example.tiendavirtual.dto.ProductResponseDto;
 import com.example.tiendavirtual.entities.ProductEntity;
@@ -23,7 +22,7 @@ public static Product entityToModel(ProductEntity productEntity){
         return product;
     }
  
-    public static ProductResponseDto modelToDto(Product product){
+    public static ProductResponseDto productCreatemodelToDto(Product product){
         ProductResponseDto productResponseDto = new ProductResponseDto();
         productResponseDto.setId(product.getId());
         productResponseDto.setName(product.getName());
@@ -61,6 +60,20 @@ public static Product entityToModel(ProductEntity productEntity){
         return product;
 
     }
+    public static Product productUpdateDtoToModel(ProductUpdateDto productUpdateDto) {
+        Product product = new Product();
+        product.setName(productUpdateDto.getName());
+        product.setPrice(productUpdateDto.getPrice());
+        product.setDescription(productUpdateDto.getDescription());
+        product.setCode(productUpdateDto.getCode());
+        product.setTax(productUpdateDto.getTax());
+        product.setStock(productUpdateDto.getStock());
+        return product;
+    }
+
+       
+}
+
+    
  
 
-}
